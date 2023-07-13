@@ -2,11 +2,8 @@
   text-align: center;
   background-color: var(--naranja);
   padding: 15px;
-  margin-top: 10px;
+
   margin-bottom: 30px;
-}
-.header__logo {
-  margin-left: 20px;
 }
 .header-nav {
   display: none;
@@ -29,6 +26,7 @@
 
 @media (min-width: 769px) {
   .home__header {
+    margin-top: 10px;
     padding: 5px;
     display: flex;
     align-items: center;
