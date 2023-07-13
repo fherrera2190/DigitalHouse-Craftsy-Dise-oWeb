@@ -1,12 +1,12 @@
-.home__footer{
-     background-color:var(--naranja);
-     width: 100%;
-     color: white;
-     height: 150px;
-     padding: 10px;
-     text-align: center;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
+.home__footer {
+  background-color: var(--naranja);
+  width: 100%;
+  color: white;
+  height: 150px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

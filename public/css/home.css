@@ -1,81 +1,142 @@
 .home__main {
-    width: 90%;
-    margin: 0 auto;
-
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* CARD SECTION */
 .main__section {
-    width: 100%;
-    margin: 10px auto 30px;
-    background-color: white;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: white;
 }
 
 .card {
-    padding: 15px;
+  padding: 15px;
 }
 
 .card__img img {
-    width: 100%;
+  width: 100%;
 }
 
 .card-text {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .card__link {
-    text-decoration: none;
-    background-color: var(--naranja);
-    color: white;
-    padding: 5px;
+  text-decoration: none;
+  background-color: var(--naranja);
+  color: white;
+  padding: 7px;
 }
 
 /* ASIDE SECTION TUTORIAL*/
-.home__aside{
-    margin-bottom: 30px;
+.home__aside {
+  margin-bottom: 30px;
 }
 .aside__tutorial {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .aside__titulo {
-    background-color: white;
-    border: 1px solid var(--celeste);
-    margin-bottom: 10px;
-    padding: 5px;
+  background-color: white;
+  border: 1px solid var(--celeste);
+  margin-bottom: 10px;
+  padding: 5px;
 }
 
 .aside__card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: white;
-    border-top: 1px solid var(--celeste);
-    border-left: 1px solid var(--celeste);
-    border-right: 1px solid var(--celeste);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-top: 1px solid var(--celeste);
+  border-left: 1px solid var(--celeste);
+  border-right: 1px solid var(--celeste);
 }
 
 .aside__card h4 {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 
 .aside__card:last-child {
-    border-bottom: 1px solid var(--celeste);
+  border-bottom: 1px solid var(--celeste);
 }
 
 /* ASIDE SECTION PUBLICIDAD*/
 
 .aside__container {
-    background-color: white;
-    padding: 15px;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid var(--celeste);
 }
 
 .aside__container img {
-    width: 100%;
-    margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 .aside__container img:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 481px) {
+  /* MAIN */
+  .main__section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 50%;
+  }
+  /* ASIDE */
+  .aside__tutorial h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .aside__card {
+    width: 50%;
+  }
+  .aside__tutorial {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .aside__publicidad h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .aside__card {
+    justify-content: space-around;
+  }
+  .aside__container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .aside__container a {
+    width: 45%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* MAIN */
+  .home__main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .main__section {
+    width: 68%;
+  }
+  .home__aside {
+    width: 30%;
+  }
+  .aside__tutorial {
+    display: block;
+  }
+  .aside__card {
+    width: 100%;
+  }
+  .aside__container {
+    display: block;
+  }
 }

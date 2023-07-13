@@ -1,17 +1,17 @@
 :root {
-    --naranja: rgb(239, 76, 39);
-    --celeste: rgb(172, 216, 230);
+  --naranja: rgb(239, 76, 39);
+  --celeste: rgb(172, 216, 230);
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
-
 
 body {
-    max-width: 1200px;
-    background-image: url("/img/bg-2.png");
-    margin: 0 auto;
+  max-width: 1200px;
+  background-image: url("/img/bg-2.png");
+  margin: 0 auto;
 }
