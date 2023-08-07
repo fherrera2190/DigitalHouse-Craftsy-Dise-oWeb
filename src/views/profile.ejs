@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+
+    <body class="profile">
+        <%- include('./partials/header.ejs') %>
+            <main class="container mb-4">
+                <div class="row">
+                    <div class="col-12 col-md-10 col-lg-8 w-100 d-flex justify-content-center">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Perfil de usuario</h4>
+                            </div>
+                            <div class="card-body">
+                                <form action="" class="row">
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label class="form-label" for="name">Nombre</label>
+                                        <input class="form-control" id="name" type="text" name="name" required>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label for="surname" class="form-label">Apellido</label>
+                                        <input class="form-control" id="surname" type="text" name="surname">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label class="form-label" for="email">Email</label>
+                                        <input class="form-control" id="email" type="email" name="email" readonly>
+                                    </div>
+
+                                    <div class="col-12 mb-3">
+                                        <label class="form-label" for="address">Domicilio</label>
+                                        <input class="form-control" id="address" type="address" name="address"
+                                            placeholder="calle Siempre Viva #1234">
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label class="form-label" for="city">Localidad</label>
+                                        <select class="form-select" name="city" id="city">
+                                            <option value="" hidden selected>Seleccione la localidad...</option>
+                                            <option value="lh">Loma Hermosa</option>
+                                            <option value="ros">Rosario</option>
+                                            <option value="caba">Buenos Aires</option>
+                                            <option value="mag">Magdalena</option>
+                                            <option value="mor">Morón</option>
+                                            <option value="lan">Lanús</option>
+                                            <option value="hu">Hurlingham</option>
+                                            <option value="jcp">José C. Paz</option>
+                                            <option value="zar">Zárate</option>
+                                            <option value="cor">Córdoba</option>
+                                            <option value="smi">San Miguel</option>
+                                            <option value="ave">Avellaneda</option>
+                                            <option value="tuc">Tucumán</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label class="form-label" for="province">Provincia</label>
+                                        <select class="form-select" name="province" id="province">
+                                            <option value="" hidden selected>Seleccione la provincia...</option>
+                                            <option value="lh">Buenos Aires</option>
+                                            <option value="ros">Santa Fe</option>
+                                            <option value="caba">CABA</option>
+                                            <option value="cor">Córdoba</option>
+                                            <option value="tuc">Tucumán</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <h5>Preferencias</h5>
+                                        <hr>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="Smartphones"
+                                                name="preferences" id="Smartphones">
+                                            <label class="form-check-label" for="Smartphones">Smartphones</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="Tablets"
+                                                name="preferences" id="Tablets">
+                                            <label class="form-check-label" for="Tablets">Tablets</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="Computadoras"
+                                                name="preferences" id="Computadoras">
+                                            <label class="form-check-label" for="Computadoras">Computadoras</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <h5>Formas de pago</h5>
+                                        <hr>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="Efectivo" name="pay"
+                                                id="Efectivo">
+                                            <label class="form-check-label" for="Efectivo">Efectivo</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="Crédito" name="pay"
+                                                id="Crédito">
+                                            <label class="form-check-label" for="Crédito">Crédito</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="Débito" name="pay"
+                                                id="Débito">
+                                            <label class="form-check-label" for="Débito">Débito</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label class="form-label" for="about">Acerca de mí</label>
+                                        <textarea class="form-control" name="about" id="about" rows="10"
+                                            style="resize: none;"></textarea>
+                                    </div>
+                                    <div class="col-12 mb-3 d-flex justify-content-end gap-3">
+                                        <button type="reset" class="buttons buttons__secondary">Limpiar</button>
+                                        <button type="submit" class="buttons buttons__primary">Enviar</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <%- include('./partials/footer.ejs') %>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+                    crossorigin="anonymous"></script>
+    </body>
+
+</html>
